@@ -1,0 +1,25 @@
+examples = [
+    {
+        "nl_query":"查找所有法国客户的名称和城市",
+        "sql_query":"SELECT `customerName`, `city` FROM `customers` WHERE `country` = 'France' LIMIT 5"
+    },
+    {
+        "nl_query":"查找所有信用额度大于10000的客户的名称和信用额度",
+        "sql_query":"SELECT `customerName`, `creditLimit` FROM customers WHERE `creditLimit` > 10000 LIMIT 5"
+    },
+    {
+        "nl_query":"一共有多少订单",
+        "sql_query":"SELECT COUNT(*) FROM orders"
+    },
+    {
+        "nl_query":"查找所有产品线。",
+        "sql_query":"SELECT DISTINCT productLine FROM productlines LIMIT 5"
+    },
+    {
+        "nl_query":"列出所有产品的名称和价格。",
+        "sql_query":"SELECT productName, buyPrice FROM products LIMIT 5"
+    },
+    {
+        "question": "部门中有多少人年龄大于56岁？",
+        "query": "SELECT count(*) FROM head WHERE age  >  56"
+}
